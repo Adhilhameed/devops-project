@@ -3,7 +3,6 @@
     {
       "source": "/api/(.*)",
       "destination": "https://devops-project-alpha-two.vercel.app/api/$1"
-    },
-    { "source": "/(.*)", "destination": "/" }
+    }
   ]
 }
