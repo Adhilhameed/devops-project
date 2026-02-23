@@ -14,7 +14,4 @@ app.get("/api/data", (req, res) => {
   res.json({ message: "Hello from backend!" });
 });
 
-// IMPORTANT PART 👇
-export default function handler(req, res) {
-  return app(req, res);
-}
+export default app;
