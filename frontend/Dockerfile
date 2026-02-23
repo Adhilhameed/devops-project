@@ -1,26 +1,19 @@
-# Use official Node image
+# Build stage
 FROM node:18-alpine
 
-# Set working directory
 WORKDIR /app
 
-# Copy package files
+# Copy package files first (for better caching)
 COPY package*.json ./
 
 # Install dependencies
 RUN npm install
 
-# Copy all files
+# Copy rest of the source code
 COPY . .
 
-# Build React app
-RUN npm run build
-
-# Install serve to run production build
-RUN npm install -g serve
-
-# Expose port
+# Expose the dev server port
 EXPOSE 3000
 
-# Start app
-CMD ["serve", "-s", "build", "-l", "3000"]
+# Start the app
+CMD ["npm", "start"]
