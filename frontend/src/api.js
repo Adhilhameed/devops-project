@@ -1,35 +1,13 @@
-// Use environment variable for backend URL or default to localhost for local testing
-const BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
+import axios from "axios";
 
-// Generic function to handle GET requests
-const fetchData = async (endpoint) => {
-  try {
-    const response = await fetch(`${BASE_URL}${endpoint}`);
-    if (!response.ok) {
-      throw new Error(`Network response was not ok (${response.status})`);
-    }
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error(`Error fetching ${endpoint}:`, error);
-    return null;
-  }
-};
+const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
-// Fetch all users
 export const fetchUsers = async () => {
-  const data = await fetchData("/api/users");
-  return data?.users || [];
+  const res = await axios.get(`${BASE_URL}/api/users`);
+  return res.data.users;
 };
 
-// Fetch a single user by ID (example for dynamic API)
-export const fetchUserById = async (id) => {
-  const data = await fetchData(`/api/users/${id}`);
-  return data || {};
-};
-
-// Example: Fetch projects for portfolio
 export const fetchProjects = async () => {
-  const data = await fetchData("/api/projects");
-  return data?.projects || [];
+  const res = await axios.get(`${BASE_URL}/api/projects`);
+  return res.data.projects;
 };

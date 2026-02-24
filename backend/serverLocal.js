@@ -1,21 +1,12 @@
+const app = require("./server");
 const mongoose = require("mongoose");
-const app = require("./server"); // Import main server
-require("dotenv").config();      // Load MONGO_URI from .env
+require("dotenv").config();
 
-// Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
-.then(() => {
-  console.log("MongoDB connected successfully");
+const PORT = process.env.PORT || 5000;
 
-  // Start local server
-  const PORT = 5000;
-  app.listen(PORT, () => {
-    console.log(`Backend running locally at http://localhost:${PORT}`);
-  });
-})
-.catch((err) => {
-  console.error("MongoDB connection error:", err);
-});
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => {
+    console.log("MongoDB connected successfully");
+    app.listen(PORT, () => console.log(`Backend running at http://localhost:${PORT}`));
+  })
+  .catch(err => console.error("MongoDB connection error:", err));

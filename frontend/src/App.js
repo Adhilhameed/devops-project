@@ -1,21 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import GitHub from "./components/GitHub";
+import Architecture from "./components/Architecture";
+import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Education from "./components/Education";
+import Experience from "./components/Experience";
+import "./App.css";
 
 function App() {
-  const [message, setMessage] = useState("");
-
-  useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/api/data`)
-      .then(res => res.json())
-      .then(data => setMessage(data.message))
-      .catch(err => console.error(err));
-  }, []);
-
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Frontend Connected</h1>
-      <h2>{message}</h2>
-    </div>
+    <>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Architecture />
+      <Contact />
+      <GitHub />
+    </>
   );
 }
+  
 
 export default App;

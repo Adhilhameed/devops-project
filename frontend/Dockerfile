@@ -1,19 +1,17 @@
-# Build stage
-FROM node:18-alpine
+FROM node:18
 
 WORKDIR /app
 
-# Copy package files first (for better caching)
 COPY package*.json ./
 
-# Install dependencies
 RUN npm install
 
-# Copy rest of the source code
 COPY . .
 
-# Expose the dev server port
+RUN npm run build
+
+RUN npm install -g serve
+
 EXPOSE 3000
 
-# Start the app
-CMD ["npm", "start"]
+CMD ["serve", "-s", "build"]
