@@ -55,11 +55,14 @@ export default function Hero() {
           {displayRole}<span className="cursor-blink" />
         </p>
 
-        <p className="hero-desc">
-          Building robust systems that scale. I architect cloud infrastructure,
-          automate deployments, and craft React applications with a focus on
-          performance and developer experience.
-        </p>
+          <p className="hero-desc">
+             Aspiring Cloud & DevOps Engineer with hands-on experience in 
+             containerizing applications using <strong style={{color:'var(--accent)'}}>Docker</strong>, 
+             automating pipelines with <strong style={{color:'var(--accent)'}}>GitHub Actions</strong>, 
+             and building full-stack apps with React & Node.js. 
+             Currently seeking a cloud internship to grow and contribute.
+          </p>
+        
 
         <div className="hero-ctas">
           <a href="#projects" className="btn-primary">

@@ -36,7 +36,7 @@ export default function Contact() {
                 <span className="contact-link-icon">🐙</span>
                 github.com/adhilhameed
               </a>
-              <a href="https://linkedin.com/in/adhilhameed" target="_blank" rel="noreferrer" className="contact-link">
+              <a href="https://www.linkedin.com/in/adhil-hameed-539a92244/" target="_blank" rel="noreferrer" className="contact-link">
                 <span className="contact-link-icon">💼</span>
                 linkedin.com/in/adhilhameed
               </a>

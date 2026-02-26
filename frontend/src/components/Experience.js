@@ -2,19 +2,13 @@ import './Experience.css';
 
 const EXPERIENCE = [
   {
-    role: 'DevOps Engineer',
-    company: 'Your Company Name',
-    period: '2023 — Present',
-    desc: 'Architected and maintained CI/CD pipelines using GitHub Actions. Containerized applications with Docker and managed deployments to AWS. Reduced deployment time by 60% through automation.',
-    tags: ['Docker', 'GitHub Actions', 'AWS', 'Terraform'],
+    role: 'Cloud Intern',
+    company: 'Ovniq Technologies',
+    period: '2026 — Present',
+    desc: 'Architected and maintained CI/CD pipelines using GitHub Actions. Containerized applications with Docker and managed deployments to AWS/Vercel. Reduced deployment time by 60% through automation.',
+    tags: ['Docker', 'GitHub Actions', 'AWS', 'Vercel', 'MongoDb',],
   },
-  {
-    role: 'Full Stack Developer',
-    company: 'Previous Company',
-    period: '2022 — 2023',
-    desc: 'Built full-stack web applications using React and Node.js. Designed RESTful APIs, integrated MongoDB databases, and deployed applications to cloud environments.',
-    tags: ['React', 'Node.js', 'MongoDB', 'REST APIs'],
-  },
+  
 ];
 
 export default function Experience() {

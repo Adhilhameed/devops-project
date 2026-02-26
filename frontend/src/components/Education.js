@@ -13,8 +13,7 @@ const EDUCATION = [
 
 const CERTS = [
   { name: 'AWS Certified Cloud Practitioner', issuer: 'Amazon Web Services', year: '2024', icon: '☁️' },
-  { name: 'Docker Certified Associate', issuer: 'Docker Inc.', year: '2023', icon: '🐋' },
-  { name: 'GitHub Actions Certification', issuer: 'GitHub', year: '2023', icon: '⚙️' },
+  
 ];
 
 export default function Education() {

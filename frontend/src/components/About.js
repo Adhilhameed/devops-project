@@ -33,7 +33,7 @@ export default function About() {
       <div className="about-grid">
         <div className="about-text reveal">
           <p>
-            I'm a <strong>DevOps & Cloud Support</strong> passionate about building
+            I'm a <strong>Cloud Intern</strong> passionate about building
             systems that are reliable, scalable, and maintainable. My work lives at the
             intersection of <span className="highlight">development and operations</span>.
           </p>

@@ -8,20 +8,7 @@ const PROJECTS = [
     tags: ['React', 'Node.js', 'Docker', 'GitHub Actions', 'MongoDB'],
     link: 'https://github.com/adhilhameed',
   },
-  {
-    num: '02',
-    title: 'Microservices Orchestration',
-    desc: 'Scalable microservices architecture with container orchestration, service mesh, and automated scaling policies for high-availability applications.',
-    tags: ['Kubernetes', 'Docker', 'AWS ECS', 'Terraform'],
-    link: '#',
-  },
-  {
-    num: '03',
-    title: 'Cloud Infrastructure Automation',
-    desc: 'Infrastructure as code solution with automated provisioning, monitoring dashboards, and cost optimization across multi-cloud environments.',
-    tags: ['Terraform', 'AWS', 'Ansible', 'Grafana'],
-    link: '#'
-  },
+ 
 ];
 
 export default function Projects() {

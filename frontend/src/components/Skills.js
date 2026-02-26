@@ -7,8 +7,7 @@ const STACK = [
   { icon: '☁️', name: 'AWS', desc: 'Cloud infrastructure & services' },
   { icon: '🟢', name: 'Node.js', desc: 'Backend API development' },
   { icon: '🍃', name: 'MongoDB', desc: 'NoSQL database management' },
-  { icon: '🏗️', name: 'Terraform', desc: 'Infrastructure as code' },
-  { icon: '📊', name: 'Grafana', desc: 'Monitoring & observability' },
+ 
 ];
 
 export default function Skills() {
