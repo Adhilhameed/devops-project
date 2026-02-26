@@ -10,7 +10,9 @@ app.use(express.json());
 // Routes
 app.use("/api/contact", require("./routes/contact"));
 
-// Server
-app.listen(5000, () => {
-  console.log("Backend running on port 5000");
+// ✅ Use Render's dynamic port
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Backend running on port ${PORT}`);
 });
