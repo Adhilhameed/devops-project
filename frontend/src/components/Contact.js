@@ -1,56 +1,67 @@
-import React, { useState } from "react";
+import './Contact.css';
 
-function Contact() {
-  const [form, setForm] = useState({
-    name: "Adhil Hameed",
-    email: "adhilkhaliq@gmail.com",
-    message: "Hey Adhil, I would like to connect with you!",
-  });
-
-  const handleSubmit = async (e) => {
+export default function Contact() {
+  const handleSubmit = (e) => {
     e.preventDefault();
-
-    await fetch("http://localhost:5000/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(form),
-    });
-
-    alert("Message Sent 🚀");
+    alert("Message sent! I'll get back to you soon.");
+    e.target.reset();
   };
 
   return (
-    <section className="section">
-      <p className="command">adhil@devops:~$ contact --send</p>
+    <section className="contact" id="contact">
+      <div className="section-header reveal">
+        <span className="section-num">06.</span>
+        <h2 className="section-title">Contact</h2>
+        <div className="section-line" />
+      </div>
 
-      <form onSubmit={handleSubmit}>
-        <input
-          placeholder="Name"
-          onChange={(e) =>
-            setForm({ ...form, name: e.target.value })
-          }
-        />
+      <div className="contact-inner reveal">
+        <div className="contact-grid">
+          <div className="contact-left">
+            <h3 className="contact-headline">
+              Let's build<br />
+              <span className="outline">something</span><br />
+              great.
+            </h3>
+            <p className="contact-sub">
+              Open to full-time roles, freelance projects, and interesting
+              collaborations. Let's talk about your next big idea.
+            </p>
+            <div className="contact-links">
+              <a href="mailto:adhilkhaliq@gmail.com" className="contact-link">
+                <span className="contact-link-icon">✉️</span>
+                adhilkhaliq@gmail.com
+              </a>
+              <a href="https://github.com/Adhilhameed" target="_blank" rel="noreferrer" className="contact-link">
+                <span className="contact-link-icon">🐙</span>
+                github.com/adhilhameed
+              </a>
+              <a href="https://linkedin.com/in/adhilhameed" target="_blank" rel="noreferrer" className="contact-link">
+                <span className="contact-link-icon">💼</span>
+                linkedin.com/in/adhilhameed
+              </a>
+            </div>
+          </div>
 
-        <input
-          placeholder="Email"
-          onChange={(e) =>
-            setForm({ ...form, email: e.target.value })
-          }
-        />
-
-        <textarea
-          placeholder="Message"
-          onChange={(e) =>
-            setForm({ ...form, message: e.target.value })
-          }
-        />
-
-        <button type="submit">Send</button>
-      </form>
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <div className="form-group">
+              <label className="form-label">Your Name</label>
+              <input className="form-input" type="text" placeholder="John Doe" required />
+            </div>
+            <div className="form-group">
+              <label className="form-label">Email Address</label>
+              <input className="form-input" type="email" placeholder="john@example.com" required />
+            </div>
+            <div className="form-group">
+              <label className="form-label">Message</label>
+              <textarea className="form-textarea" placeholder="Tell me about your project..." required />
+            </div>
+            <button type="submit" className="btn-primary" style={{ cursor: 'none', border: 'none' }}>
+              <span>Send Message</span><span>→</span>
+            </button>
+          </form>
+        </div>
+      </div>
     </section>
   );
 }
-
-export default Contact;

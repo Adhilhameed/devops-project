@@ -1,22 +1,60 @@
-function Projects() {
+import './Projects.css';
+
+const PROJECTS = [
+  {
+    num: '01',
+    title: 'DevOps Portfolio Platform',
+    desc: 'A React portfolio system with automated CI/CD pipelines, Docker containerization, and GitHub Actions workflows. Features zero-downtime deployments, automated testing, and cloud hosting.',
+    tags: ['React', 'Node.js', 'Docker', 'GitHub Actions', 'MongoDB'],
+    link: 'https://github.com/adhilhameed',
+  },
+  {
+    num: '02',
+    title: 'Microservices Orchestration',
+    desc: 'Scalable microservices architecture with container orchestration, service mesh, and automated scaling policies for high-availability applications.',
+    tags: ['Kubernetes', 'Docker', 'AWS ECS', 'Terraform'],
+    link: '#',
+  },
+  {
+    num: '03',
+    title: 'Cloud Infrastructure Automation',
+    desc: 'Infrastructure as code solution with automated provisioning, monitoring dashboards, and cost optimization across multi-cloud environments.',
+    tags: ['Terraform', 'AWS', 'Ansible', 'Grafana'],
+    link: '#'
+  },
+];
+
+export default function Projects() {
   return (
-    <section className="section">
-      <p className="command">adhil@devops:~$ ls projects</p>
+    <section className="projects" id="projects">
+      <div className="section-header reveal">
+        <span className="section-num">02.</span>
+        <h2 className="section-title">Projects</h2>
+        <div className="section-line" />
+      </div>
 
-      <div className="card">
-        <h3>DevOps Portfolio</h3>
-        <p>Dockerized MERN app with GitHub Actions CI/CD deployed on Vercel</p>
-
-        <a href="https://github.com/Adhilhameed/devops-project.git" target="_blank" rel="noreferrer">
-          <button>GitHub Repo</button>
-        </a>
-
-        <a href="https://devops-project-ybm5.vercel.app/" target="_blank" rel="noreferrer">
-          <button>Live Demo</button>
-        </a>
+      <div className="projects-grid">
+        {PROJECTS.map((p, i) => (
+          <a
+            key={p.num}
+            href={p.link}
+            target="_blank"
+            rel="noreferrer"
+            className="project-card reveal"
+            style={{ transitionDelay: `${i * 0.1}s` }}
+          >
+            <div className="project-top">
+              <span className="project-num">{p.num}</span>
+              <div className="project-arrow">↗</div>
+            </div>
+            <h3 className="project-title">{p.title}</h3>
+            <p className="project-desc">{p.desc}</p>
+            <div className="project-tags">
+              {p.tags.map(t => <span className="tag" key={t}>{t}</span>)}
+            </div>
+          </a>
+        ))}
       </div>
     </section>
   );
 }
-
-export default Projects;

@@ -13,6 +13,9 @@ router.post("/", async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: "Server error" });
   }
+  router.get("/contact", (req, res) => {
+  res.send("Contact GET route working");
+});
 });
 
 module.exports = router;

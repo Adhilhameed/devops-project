@@ -1,0 +1,34 @@
+.experience { padding: 120px 60px; }
+.exp-list { display: flex; flex-direction: column; gap: 2px; }
+.exp-item {
+  display: grid; grid-template-columns: 200px 1fr; gap: 60px;
+  background: var(--surface); padding: 50px;
+  border: 1px solid var(--border);
+  transition: border-color 0.3s;
+}
+.exp-item:hover { border-color: rgba(0,255,136,0.2); }
+.exp-left { padding-top: 4px; }
+.exp-period {
+  font-family: var(--mono); font-size: 0.7rem;
+  color: var(--accent); letter-spacing: 0.1em; margin-bottom: 20px;
+}
+.exp-dot {
+  width: 8px; height: 8px; border-radius: 50%; background: var(--accent3);
+  box-shadow: 0 0 12px var(--accent3);
+}
+.exp-role {
+  font-family: var(--sans); font-weight: 700;
+  font-size: 1.4rem; letter-spacing: -0.02em; margin-bottom: 6px;
+}
+.exp-company {
+  font-family: var(--mono); font-size: 0.75rem;
+  color: var(--muted); letter-spacing: 0.08em; margin-bottom: 20px;
+}
+.exp-desc { color: var(--muted); line-height: 1.7; font-size: 0.95rem; margin-bottom: 24px; }
+.exp-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+
+@media (max-width: 768px) {
+  .experience { padding: 80px 24px; }
+  .exp-item { grid-template-columns: 1fr; gap: 20px; padding: 30px; }
+  .exp-dot { display: none; }
+}
