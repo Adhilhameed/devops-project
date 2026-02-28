@@ -78,7 +78,7 @@ export default function Hero() {
           <div className="stat-label">Years Exp.</div>
         </div>
         <div className="stat">
-          <div className="stat-num">20+</div>
+          <div className="stat-num">2+</div>
           <div className="stat-label">Projects</div>
         </div>
         <div className="stat">
