@@ -2,11 +2,20 @@
 
 This repository contains a production-ready React frontend application containerized using Docker and served with Nginx.
 
-The goal of this project is to demonstrate:
+The project demonstrates:
 - Multi-stage Docker builds
-- Nginx production server
+- Production-ready Nginx configuration
 - Docker-based deployment
 - CI/CD ready structure
+- Live cloud deployment on Vercel
+
+---
+
+## 🌍 Live Demo
+
+Frontend is deployed on Vercel:
+
+https://adhil-cloud.vercel.app/
 
 ---
 
@@ -22,6 +31,7 @@ DevOps:
 - Nginx
 - Docker Compose (optional)
 - GitHub Actions (CI/CD ready)
+- Vercel (Cloud Deployment)
 
 ---
 
@@ -86,6 +96,20 @@ Benefits:
 - Smaller image size
 - Faster deployment
 - Production-ready setup
+- Secure and optimized container
+
+---
+
+## 🚀 Deployment
+
+The frontend is deployed publicly using Vercel:
+
+https://adhil-cloud.vercel.app/
+
+This setup ensures:
+- Fast global CDN delivery
+- Automatic builds from GitHub
+- Continuous deployment support
 
 ---
 
@@ -95,6 +119,7 @@ This project is created for learning and demonstrating:
 - Frontend containerization
 - Production deployment best practices
 - DevOps workflow implementation
+- Modern cloud hosting integration
 
 ---
 
