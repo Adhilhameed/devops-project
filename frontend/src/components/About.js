@@ -2,11 +2,11 @@ import { useEffect, useRef, useState } from 'react';
 import './About.css';
 
 const SKILLS = [
-  { name: 'React / Next.js', pct: 90 },
-  { name: 'Node.js / Express', pct: 85 },
-  { name: 'Docker / Kubernetes', pct: 88 },
-  { name: 'CI/CD / GitHub Actions', pct: 92 },
-  { name: 'AWS / Cloud', pct: 80 },
+  { name: 'React', pct: 75 },
+  { name: 'Node.js / Express (Basics)', pct: 70 },
+  { name: 'Docker (Containerization)', pct: 75 },
+  { name: 'CI/CD / GitHub Actions', pct: 85 },
+  { name: 'AWS / Cloud', pct: 70 },
 ];
 
 export default function About() {
@@ -32,21 +32,25 @@ export default function About() {
 
       <div className="about-grid">
         <div className="about-text reveal">
-          <p>
-            I'm a <strong>Cloud Intern</strong> passionate about building
-            systems that are reliable, scalable, and maintainable. My work lives at the
-            intersection of <span className="highlight">development and operations</span>.
-          </p>
-          <p>
-            I specialize in containerizing applications with <strong>Docker</strong>, setting
-            up automated pipelines with <strong>GitHub Actions</strong>, and deploying to
-            cloud platforms. Every system I build is production-ready from day one.
-          </p>
-          <p>
-            When I'm not writing code, I'm exploring new DevOps tools, contributing to open
-            source, and refining my approach to{' '}
-            <span className="highlight">Infrastructure as code</span>.
-          </p>
+         <p> 
+          I'm a <strong>Cloud & DevOps Intern</strong> passionate about building
+             reliable and maintainable systems. My work focuses on the
+             intersection of <span className="highlight">development and operations</span>.
+        </p>
+
+        <p>
+         I have hands-on experience containerizing applications with 
+         <strong> Docker</strong>, setting up automated CI workflows with 
+         <strong> GitHub Actions</strong>, and deploying modern web applications 
+         to cloud platforms. I aim to follow best practices to ensure clean, 
+         scalable, and maintainable deployments.
+        </p>
+
+        <p>
+         When I'm not building projects, I'm learning new DevOps tools 
+         and strengthening my foundation in 
+         <span className="highlight">Cloud and Infrastructure fundamentals</span>.
+        </p>
         </div>
 
         <div className="about-skills reveal" ref={skillsRef}>

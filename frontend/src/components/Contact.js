@@ -28,7 +28,7 @@ export default function Contact() {
               collaborations. Let's talk about your next big idea.
             </p>
             <div className="contact-links">
-              <a href="mailto:adhilkhaliq@gmail.com" className="contact-link">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adhilkhaliq@gmail.com"className="contact-link">
                 <span className="contact-link-icon">✉️</span>
                 adhilkhaliq@gmail.com
               </a>

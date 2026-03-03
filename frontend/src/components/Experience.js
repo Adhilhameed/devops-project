@@ -6,7 +6,7 @@ const EXPERIENCE = [
     company: 'Ovniq Technologies',
     period: '2026 — Present',
     desc: 'Architected and maintained CI/CD pipelines using GitHub Actions. Containerized applications with Docker and managed deployments to AWS/Vercel. Reduced deployment time by 60% through automation.',
-    tags: ['Docker', 'GitHub Actions', 'AWS', 'Vercel', 'MongoDb',],
+    tags: ['React', 'Docker', 'GitHub Actions', 'AWS', 'Vercel', 'MongoDb',],
   },
   
 ];

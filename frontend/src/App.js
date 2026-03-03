@@ -72,13 +72,14 @@ function App() {
       </main>
 
       <footer>
-        <div className="footer-text">
-          © 2026 <span>Adhil Hameed</span>. Built with React + Docker + GitHub Actions.
-        </div>
-        <div className="footer-text">
-          Designed & Developed with <span>♥</span>
-        </div>
-      </footer>
+      <div className="footer-text">
+         © {new Date().getFullYear()} <span>Adhil Hameed</span>. 
+         Built with React, Docker & GitHub Actions.
+     </div>
+     <div className="footer-text">
+          Designed & Developed by <span>Adhil Hameed</span>
+     </div>
+     </footer>
     </>
   );
 }

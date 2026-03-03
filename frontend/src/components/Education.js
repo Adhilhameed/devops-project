@@ -6,13 +6,13 @@ const EDUCATION = [
     field: 'Information Technology',
     school: 'Bannari Amman Institute of Technology',
     period: '2021 — 2025',
-    desc: 'Focused on software engineering, cloud computing, and distributed systems. Graduated with distinction.',
-    grade: 'CGPA: 7/10',
+    desc: 'Focused on software engineering, cloud computing, and distributed systems. Graduated with First Class.',
+    grade: 'CGPA: 6.9/10',
   },
 ];
 
 const CERTS = [
-  { name: 'AWS Certified Cloud Practitioner', issuer: 'Amazon Web Services', year: '2024', icon: '☁️' },
+  { name: 'AWS Certified Cloud Practitioner', issuer: 'Amazon Web Services', year: '2026', icon: '☁️' },
   
 ];
 

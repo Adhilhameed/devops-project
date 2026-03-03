@@ -2,9 +2,10 @@ import { useState, useEffect } from 'react';
 import './Hero.css';
 
 const ROLES = [
-  'DevOps Engineer',
-  'Docker & CI/CD Expert',
-  'Cloud Architect',
+  'DevOps Enthusiast',
+  'Junior DevOps Engineer',
+  'Docker & CI/CD Practitioner',
+  'Cloud Learner',
   'React Developer',
 ];
 
@@ -56,11 +57,11 @@ export default function Hero() {
         </p>
 
           <p className="hero-desc">
-             Aspiring Cloud & DevOps Engineer with hands-on experience in 
-             containerizing applications using <strong style={{color:'var(--accent)'}}>Docker</strong>, 
-             automating pipelines with <strong style={{color:'var(--accent)'}}>GitHub Actions</strong>, 
-             and building full-stack apps with React & Node.js. 
-             Currently seeking a cloud internship to grow and contribute.
+             Aspiring Cloud & DevOps Engineer with hands-on experience containerizing a React application using 
+            <strong style={{color:'var(--accent)'}}>Docker</strong> and automating CI workflows with 
+            <strong style={{color:'var(--accent)'}}>GitHub Actions</strong>.Experienced in building responsive frontend applications with React 
+            and deploying them to cloud platforms like Vercel. 
+            Currently seeking an entry-level Cloud/DevOps opportunity to grow and contribute.
           </p>
         
 
@@ -74,11 +75,11 @@ export default function Hero() {
 
       <div className="hero-stats">
         <div className="stat">
-          <div className="stat-num">1</div>
+          <div className="stat-num">0-1</div>
           <div className="stat-label">Years Exp.</div>
         </div>
         <div className="stat">
-          <div className="stat-num">2+</div>
+          <div className="stat-num">1+</div>
           <div className="stat-label">Projects</div>
         </div>
         <div className="stat">
