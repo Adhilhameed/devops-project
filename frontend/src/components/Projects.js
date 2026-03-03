@@ -2,11 +2,11 @@ import './Projects.css';
 
 const PROJECTS = [
   {
-    num: '01',
-    title: 'DevOps Portfolio Platform',
-    desc: 'A React portfolio system with automated CI/CD pipelines, Docker containerization, and GitHub Actions workflows. Features zero-downtime deployments, automated testing, and cloud hosting.',
-    tags: ['React', 'Node.js', 'Docker', 'GitHub Actions', 'MongoDB'],
-    link: 'https://github.com/adhilhameed',
+   num: '01',
+   title: 'DevOps Portfolio Platform',
+   desc: 'A React-based portfolio application containerized with Docker and integrated with GitHub Actions for automated CI workflows. Demonstrates modern DevOps practices including version control, automated builds, and cloud deployment.',
+   tags: ['React', 'Docker', 'GitHub Actions', 'CI/CD', 'Vercel'],
+   link: 'https://github.com/Adhilhameed/devops-project',
   },
  
 ];

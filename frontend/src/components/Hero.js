@@ -75,16 +75,16 @@ export default function Hero() {
 
       <div className="hero-stats">
         <div className="stat">
-          <div className="stat-num">0-1</div>
-          <div className="stat-label">Years Exp.</div>
+          <div className="stat-num">1</div>
+          <div className="stat-label">Devops Project Deployed</div>
         </div>
         <div className="stat">
-          <div className="stat-num">1+</div>
-          <div className="stat-label">Projects</div>
+          <div className="stat-num">Intern</div>
+          <div className="stat-label">Cloud & Devops</div>
         </div>
         <div className="stat">
-          <div className="stat-num">99%</div>
-          <div className="stat-label">Uptime SLA</div>
+          <div className="stat-num">Docker</div>
+          <div className="stat-label">CI/CD Enabled</div>
         </div>
       </div>
     </section>
