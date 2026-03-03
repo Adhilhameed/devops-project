@@ -28,10 +28,14 @@ export default function Contact() {
               collaborations. Let's talk about your next big idea.
             </p>
             <div className="contact-links">
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adhilkhaliq@gmail.com"className="contact-link">
-                <span className="contact-link-icon">✉️</span>
-                adhilkhaliq@gmail.com
-              </a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adhilkhaliq@gmail.com&su=Portfolio%20Contact&body=Hello%20Adhil,"
+               target="_blank"
+               rel="noopener noreferrer"
+              className="contact-link"
+            >
+            <span className="contact-link-icon">✉️</span>
+             adhilkhaliq@gmail.com
+            </a>
               <a href="https://github.com/Adhilhameed" target="_blank" rel="noreferrer" className="contact-link">
                 <span className="contact-link-icon">🐙</span>
                 github.com/adhilhameed
