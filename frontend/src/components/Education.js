@@ -9,11 +9,18 @@ const EDUCATION = [
     desc: 'Focused on software engineering, cloud computing, and distributed systems. Graduated with First Class.',
     grade: 'CGPA: 6.9/10',
   },
+  {
+    degree: 'Higher Secondary Education',
+    field: 'Science (Physics, Chemistry, Mathematics)',
+    school: 'Rose Mary Matric Higher Secondary School',
+    period: '2006 — 2021',
+    desc: 'Completed schooling from LKG to Class 12. Consistently achieved academic excellence throughout.',
+    grade: '10th: 91.6%  |  12th: 90.8%',
+  },
 ];
 
 const CERTS = [
   { name: 'AWS Certified Cloud Practitioner', issuer: 'Amazon Web Services', year: '2026', icon: '☁️' },
-  
 ];
 
 export default function Education() {
@@ -54,4 +61,4 @@ export default function Education() {
       </div>
     </section>
   );
-}
+} 
