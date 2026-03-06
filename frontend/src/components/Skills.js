@@ -7,7 +7,12 @@ const STACK = [
   { icon: '☁️', name: 'AWS', desc: 'Cloud infrastructure & services' },
   { icon: '🟢', name: 'Node.js', desc: 'Backend API development' },
   { icon: '🍃', name: 'MongoDB', desc: 'NoSQL database management' },
- 
+  { icon: '🐍', name: 'Python', desc: 'Backend microservices development' },
+  { icon: '🔥', name: 'Prometheus', desc: 'Metrics collection & alerting' },
+  { icon: '📊', name: 'Grafana', desc: 'Monitoring dashboards & visualization' },
+  { icon: '📋', name: 'Loki', desc: 'Log aggregation & querying' },
+  { icon: '🚨', name: 'Alertmanager', desc: 'Alert routing & notifications' },
+  { icon: '🐧', name: 'Linux', desc: 'WSL2 & Ubuntu server administration' },
 ];
 
 export default function Skills() {
