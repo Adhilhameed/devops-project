@@ -2,11 +2,12 @@ import { useEffect, useRef, useState } from 'react';
 import './About.css';
 
 const SKILLS = [
-  { name: 'React', pct: 75 },
-  { name: 'Node.js / Express (Basics)', pct: 70 },
-  { name: 'Docker (Containerization)', pct: 75 },
-  { name: 'CI/CD / GitHub Actions', pct: 85 },
-  { name: 'AWS / Cloud', pct: 70 },
+  { name: 'Docker & Docker Compose', pct: 75 },
+  { name: 'CI/CD / GitHub Actions', pct: 75 },
+  { name: 'Prometheus & Grafana', pct: 65 },
+  { name: 'React', pct: 70 },
+  { name: 'Linux / WSL2', pct: 70 },
+  { name: 'AWS / Cloud', pct: 65 },
 ];
 
 export default function About() {
@@ -32,25 +33,32 @@ export default function About() {
 
       <div className="about-grid">
         <div className="about-text reveal">
-         <p> 
-          I'm a <strong>Cloud & DevOps Intern</strong> passionate about building
-             reliable and maintainable systems. My work focuses on the
-             intersection of <span className="highlight">development and operations</span>.
-        </p>
+          <p>
+            I'm an <strong>Aspiring Cloud & DevOps Engineer</strong> currently
+            interning at Ovniq Technologies. I'm passionate about learning how
+            modern infrastructure works and building{' '}
+            <span className="highlight">
+              reliable and automated systems
+            </span>
+            .
+          </p>
 
-        <p>
-         I have hands-on experience containerizing applications with 
-         <strong> Docker</strong>, setting up automated CI workflows with 
-         <strong> GitHub Actions</strong>, and deploying modern web applications 
-         to cloud platforms. I aim to follow best practices to ensure clean, 
-         scalable, and maintainable deployments.
-        </p>
+          <p>
+            During my internship and personal projects, I've gained hands-on
+            experience with <strong>Docker</strong> for containerization,{' '}
+            <strong>GitHub Actions</strong> for CI/CD pipelines, and building
+            a full observability platform using{' '}
+            <strong>Prometheus and Grafana</strong>. I enjoy learning by
+            doing — setting things up, breaking them, and fixing them.
+          </p>
 
-        <p>
-         When I'm not building projects, I'm learning new DevOps tools 
-         and strengthening my foundation in 
-         <span className="highlight">Cloud and Infrastructure fundamentals</span>.
-        </p>
+          <p>
+            I'm currently focused on deepening my understanding of{' '}
+            <span className="highlight">
+              DevOps practices, cloud infrastructure, and monitoring systems
+            </span>{' '}
+            to grow into a strong Cloud/DevOps engineer.
+          </p>
         </div>
 
         <div className="about-skills reveal" ref={skillsRef}>
