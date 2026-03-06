@@ -9,7 +9,7 @@ const PROJECTS = [
    link: 'https://github.com/Adhilhameed/devops-project',
   },
   {
-  num: '01',
+  num: '02',
   title: 'DevOps Monitoring Platform',
   desc: 'Built a full-stack observability platform for 3 Python Flask microservices (Auth, Orders, Inventory). Instrumented services with Prometheus client library, wrote PromQL alert rules using the RED method (Rate, Errors, Duration), visualized metrics in Grafana dashboards, aggregated logs using Loki and Promtail, and configured Alertmanager to send real-time Slack notifications when error rates exceed 10%. Everything deployed with Docker Compose in a single command.',
   tags: ['Python', 'Flask', 'Docker', 'Prometheus', 'Grafana', 'Loki', 'Alertmanager', 'PromQL'],
