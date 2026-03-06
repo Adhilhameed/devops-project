@@ -75,7 +75,7 @@ export default function Hero() {
 
       <div className="hero-stats">
         <div className="stat">
-          <div className="stat-num">1</div>
+          <div className="stat-num">2</div>
           <div className="stat-label">Devops Project Deployed</div>
         </div>
         <div className="stat">
