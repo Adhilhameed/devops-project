@@ -7,6 +7,8 @@ export default function Contact() {
     e.target.reset();
   };
 
+  const gmailUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=adhilkhaliq@gmail.com&su=Portfolio%20Contact&body=Hello%20Adhil,";
+
   return (
     <section className="contact" id="contact">
       <div className="section-header reveal">
@@ -17,6 +19,7 @@ export default function Contact() {
 
       <div className="contact-inner reveal">
         <div className="contact-grid">
+
           <div className="contact-left">
             <h3 className="contact-headline">
               Let's build<br />
@@ -27,18 +30,14 @@ export default function Contact() {
               Open to full-time roles, freelance projects, and interesting
               collaborations. Let's talk about your next big idea.
             </p>
+
             <div className="contact-links">
-              
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=adhilkhaliq@gmail.com&su=Portfolio%20Contact&body=Hello%20Adhil,"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="contact-link"
-              >
+              <a href={gmailUrl} target="_blank" rel="noopener noreferrer" className="contact-link">
                 <span className="contact-link-icon">&#9993;</span>
                 adhilkhaliq@gmail.com
               </a>
               <a href="https://github.com/Adhilhameed" target="_blank" rel="noreferrer" className="contact-link">
-                <span className="contact-link-icon">&#128025;</span>
+                <span className="contact-link-icon">&#9906;</span>
                 github.com/adhilhameed
               </a>
               <a href="https://www.linkedin.com/in/adhil-hameed-539a92244/" target="_blank" rel="noreferrer" className="contact-link">
@@ -55,11 +54,7 @@ export default function Contact() {
                   <div className="resume-sub">Cloud &amp; DevOps Engineer</div>
                 </div>
               </div>
-              
-                href="/Adhil_Hameed_Resume.pdf"
-                download="Adhil_Hameed_Resume.pdf"
-                className="resume-download-btn"
-              >
+              <a href="/Adhil_Hameed_Resume.pdf" download="Adhil_Hameed_Resume.pdf" className="resume-download-btn">
                 &#8595; Download
               </a>
             </div>
@@ -82,6 +77,7 @@ export default function Contact() {
               <span>Send Message</span><span>&#8594;</span>
             </button>
           </form>
+
         </div>
       </div>
     </section>
