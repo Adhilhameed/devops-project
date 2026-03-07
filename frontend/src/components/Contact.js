@@ -28,21 +28,39 @@ export default function Contact() {
               collaborations. Let's talk about your next big idea.
             </p>
             <div className="contact-links">
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adhilkhaliq@gmail.com&su=Portfolio%20Contact&body=Hello%20Adhil,"
-               target="_blank"
-               rel="noopener noreferrer"
-              className="contact-link"
-            >
-            <span className="contact-link-icon">✉️</span>
-             adhilkhaliq@gmail.com
-            </a>
+              
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=adhilkhaliq@gmail.com&su=Portfolio%20Contact&body=Hello%20Adhil,"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-link"
+              >
+                <span className="contact-link-icon">&#9993;</span>
+                adhilkhaliq@gmail.com
+              </a>
               <a href="https://github.com/Adhilhameed" target="_blank" rel="noreferrer" className="contact-link">
-                <span className="contact-link-icon">🐙</span>
+                <span className="contact-link-icon">&#128025;</span>
                 github.com/adhilhameed
               </a>
               <a href="https://www.linkedin.com/in/adhil-hameed-539a92244/" target="_blank" rel="noreferrer" className="contact-link">
-                <span className="contact-link-icon">💼</span>
+                <span className="contact-link-icon">&#128188;</span>
                 linkedin.com/in/adhilhameed
+              </a>
+            </div>
+
+            <div className="resume-card">
+              <div className="resume-card-left">
+                <span className="resume-icon">&#128196;</span>
+                <div>
+                  <div className="resume-title">My Resume</div>
+                  <div className="resume-sub">Cloud &amp; DevOps Engineer</div>
+                </div>
+              </div>
+              
+                href="/Adhil_Hameed_Resume.pdf"
+                download="Adhil_Hameed_Resume.pdf"
+                className="resume-download-btn"
+              >
+                &#8595; Download
               </a>
             </div>
           </div>
@@ -60,8 +78,8 @@ export default function Contact() {
               <label className="form-label">Message</label>
               <textarea className="form-textarea" placeholder="Tell me about your project..." required />
             </div>
-            <button type="submit" className="btn-primary" style={{ cursor: 'none', border: 'none' }}>
-              <span>Send Message</span><span>→</span>
+            <button type="submit" className="btn-primary" style={{ border: 'none' }}>
+              <span>Send Message</span><span>&#8594;</span>
             </button>
           </form>
         </div>
